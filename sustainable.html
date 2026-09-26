@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sustainable Somalia | Discover Somalia</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #f5f7f6;
+    color: #222;
+    line-height: 1.6;
+}
+
+nav {
+    background: #063b35;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #f2c94c;
+}
+
+.header {
+    background:
+        linear-gradient(rgba(0,50,45,.7), rgba(0,50,45,.7)),
+        url("https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1800&q=80");
+
+    background-size: cover;
+    background-position: center;
+
+    padding: 120px 7%;
+    text-align: center;
+    color: white;
+}
+
+.header h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+section {
+    padding: 70px 7%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.title h2 {
+    color: #063b35;
+    font-size: 38px;
+}
+
+.title p {
+    max-width: 750px;
+    margin: 10px auto;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.08);
+}
+
+.card h3 {
+    color: #063b35;
+    margin-bottom: 12px;
+}
+
+.sdg {
+    background: #063b35;
+    color: white;
+}
+
+.sdg .title h2 {
+    color: #f2c94c;
+}
+
+.sdg-box {
+    max-width: 900px;
+    margin: auto;
+    padding: 35px;
+    background: rgba(255,255,255,.1);
+    border-radius: 15px;
+}
+
+.sdg-box h2 {
+    color: #f2c94c;
+}
+
+
+/* AI PLANNER */
+
+.planner {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,.1);
+}
+
+.planner label {
+    display: block;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.planner select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.planner button {
+    margin-top: 25px;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #063b35;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.planner button:hover {
+    background: #f2c94c;
+    color: #063b35;
+}
+
+.result {
+    display: none;
+    margin-top: 30px;
+    padding: 25px;
+    background: #eef5f3;
+    border-left: 5px solid #063b35;
+    border-radius: 10px;
+}
+
+.campaign {
+    text-align: center;
+    background: #f2c94c;
+    color: #063b35;
+}
+
+.campaign h2 {
+    font-size: 40px;
+}
+
+.campaign p {
+    max-width: 750px;
+    margin: 15px auto;
+}
+
+.sources {
+    background: white;
+}
+
+.sources a {
+    color: #063b35;
+}
+
+footer {
+    background: #022722;
+    color: white;
+    padding: 35px 7%;
+    text-align: center;
+}
+
+@media(max-width:800px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 40px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="logo">
+DISCOVER SOMALIA
+</div>
+
+<ul>
+
+<li>
+<a href="index.html">Home</a>
+</li>
+
+<li>
+<a href="explore.html">Explore</a>
+</li>
+
+<li>
+<a href="sustainable.html">Sustainable Somalia</a>
+</li>
+
+</ul>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<header class="header">
+
+<h1>Sustainable Somalia</h1>
+
+<p>
+Tourism that supports people, culture and the environment.
+</p>
+
+</header>
+
+
+<!-- SDG 8 -->
+
+<section class="sdg">
+
+<div class="title">
+
+<h2>SDG 8: Decent Work & Economic Growth</h2>
+
+<p>
+Sustainable tourism can support economic opportunities
+while promoting local culture and products.
+</p>
+
+</div>
+
+
+<div class="sdg-box">
+
+<h2>How tourism can contribute</h2>
+
+<br>
+
+<p>
+<strong>1. Local employment</strong><br>
+Tourism businesses can create jobs in hospitality,
+transport, guiding, food services and other sectors.
+</p>
+
+<br>
+
+<p>
+<strong>2. Local businesses</strong><br>
+Visitors can support locally owned restaurants,
+craft businesses, accommodation providers and tour operators.
+</p>
+
+<br>
+
+<p>
+<strong>3. Cultural heritage</strong><br>
+Tourism can create incentives to preserve and
+promote cultural heritage when managed responsibly.
+</p>
+
+<br>
+
+<p>
+<strong>4. Entrepreneurship</strong><br>
+Young people and local entrepreneurs can develop
+tourism-related products and services.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- COMMUNITY -->
+
+<section>
+
+<div class="title">
+
+<h2>Community-Based Tourism</h2>
+
+<p>
+Tourism should create opportunities for the communities
+where visitors spend their time.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>👥 Community Jobs</h3>
+
+<p>
+Tourism can create opportunities in guiding,
+hospitality, transport, food services and cultural activities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🏪 Local Businesses</h3>
+
+<p>
+Tourists can support locally owned shops,
+restaurants, craftspeople and accommodation providers.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>👩 Women & Youth</h3>
+
+<p>
+Tourism entrepreneurship can provide opportunities
+for women and young people to participate in the economy.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ENVIRONMENT -->
+
+<section>
+
+<div class="title">
+
+<h2>Protecting the Environment</h2>
+
+<p>
+Sustainable tourism should reduce negative environmental
+impacts and protect natural resources.
+</p>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🌊 Protect Coastal Areas</h3>
+
+<p>
+Encourage responsible behaviour around beaches,
+marine environments and coastal communities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>♻️ Reduce Waste</h3>
+
+<p>
+Tourism businesses and visitors can reduce plastic
+waste and encourage recycling and responsible disposal.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>💧 Save Resources</h3>
+
+<p>
+Hotels and tourism businesses can use water and
+energy efficiently.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- SDG 12 -->
+
+<section class="sdg">
+
+<div class="title">
+
+<h2>SDG 12: Responsible Consumption</h2>
+
+</div>
+
+<div class="sdg-box">
+
+<p>
+Responsible tourism encourages visitors and businesses
+to use resources carefully, reduce waste and make
+responsible purchasing decisions.
+</p>
+
+<br>
+
+<p>
+Supporting local products can also keep more tourism
+income within local communities.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- AI TRAVEL PLANNER -->
+
+<section>
+
+<div class="title">
+
+<h2>🤖 Somalia AI Travel Planner</h2>
+
+<p>
+Choose your travel preferences and receive a sample
+tourism itinerary.
+</p>
+
+</div>
+
+
+<div class="planner">
+
+<label>
+How many days will you travel?
+</label>
+
+<select id="days">
+
+<option value="3">3 Days</option>
+<option value="5">5 Days</option>
+<option value="7">7 Days</option>
+
+</select>
+
+
+<label>
+What are you interested in?
+</label>
+
+<select id="interest">
+
+<option value="culture">
+Culture & Heritage
+</option>
+
+<option value="nature">
+Nature
+</option>
+
+<option value="beaches">
+Beaches & Coastal Tourism
+</option>
+
+<option value="adventure">
+Adventure
+</option>
+
+</select>
+
+
+<label>
+What is your travel style?
+</label>
+
+<select id="style">
+
+<option value="relaxed">
+Relaxed
+</option>
+
+<option value="adventure">
+Adventure
+</option>
+
+<option value="cultural">
+Cultural
+</option>
+
+</select>
+
+
+<button onclick="createPlan()">
+✨ Create My Travel Plan
+</button>
+
+
+<div class="result" id="result">
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- AI TECHNOLOGY -->
+
+<section>
+
+<div class="title">
+
+<h2>How AI Can Support Tourism</h2>
+
+</div>
+
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🤖 Personalised Trips</h3>
+
+<p>
+AI can use visitor preferences to recommend
+destinations and activities.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>🌍 Multilingual Information</h3>
+
+<p>
+AI-powered tools can help provide tourism
+information in different languages.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>📊 Tourism Analytics</h3>
+
+<p>
+AI and data analytics can help tourism organisations
+understand visitor behaviour and improve services.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MARKETING CAMPAIGN -->
+
+<section class="campaign">
+
+<h2>#DiscoverSomalia</h2>
+
+<p>
+A digital tourism campaign aimed at introducing Somalia's
+culture, heritage, nature and coastal experiences to
+international audiences.
+</p>
+
+<p>
+<strong>
+Instagram • TikTok • YouTube • Website • AI Travel Planner
+</strong>
+</p>
+
+</section>
+
+
+<!-- RESPONSIBLE TRAVEL -->
+
+<section>
+
+<div class="title">
+
+<h2>Responsible & Informed Travel</h2>
+
+</div>
+
+<div class="sdg-box" style="background:#063b35;color:white;">
+
+<p>
+Travel conditions can change. Visitors should check
+current official travel advice, entry requirements,
+local regulations and security information before travelling.
+</p>
+
+<br>
+
+<p>
+Responsible visitors should respect local communities,
+cultures, traditions and environmental rules.
+</p>
+
+</div>
+
+</section>
+
+
+<!-- SOURCES -->
+
+<section class="sources">
+
+<div class="title">
+
+<h2>Useful Sources</h2>
+
+</div>
+
+<p>
+• Federal Government of Somalia – Tourism information
+</p>
+
+<p>
+• Somalia Ministry of Information, Culture and Tourism
+</p>
+
+<p>
+• Somalia Immigration and Citizenship Agency
+</p>
+
+<p>
+• United Nations Sustainable Development Goals
+</p>
+
+<p>
+• UNESCO – Cultural Heritage
+</p>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<h3>Discover Somalia</h3>
+
+<p>
+Culture • Heritage • Nature • Sustainable Tourism
+</p>
+
+<p>
+© 2026 Discover Somalia Tourism Project
+</p>
+
+</footer>
+
+
+<!-- AI PLANNER JAVASCRIPT -->
+
+<script>
+
+function createPlan() {
+
+    let days = document.getElementById("days").value;
+
+    let interest = document.getElementById("interest").value;
+
+    let style = document.getElementById("style").value;
+
+    let result = document.getElementById("result");
+
+    let plan = "";
+
+
+    if (interest === "culture") {
+
+        plan = `
+        <h3>Your Cultural & Heritage Plan</h3>
+
+        <p><strong>Day 1:</strong> Explore Mogadishu and learn about Somali history and culture.</p>
+
+        <p><strong>Day 2:</strong> Discover cultural food, crafts and local traditions.</p>
+
+        <p><strong>Day 3:</strong> Explore historical and heritage attractions.</p>
+        `;
+
+    }
+
+
+    else if (interest === "nature") {
+
+        plan = `
+        <h3>Your Nature Plan</h3>
+
+        <p><strong>Day 1:</strong> Discover Somalia's natural landscapes.</p>
+
+        <p><strong>Day 2:</strong> Explore coastal and marine environments.</p>
+
+        <p><strong>Day 3:</strong> Enjoy a responsible nature-based tourism experience.</p>
+        `;
+
+    }
+
+
+    else if (interest === "beaches") {
+
+        plan = `
+        <h3>Your Coastal Tourism Plan</h3>
+
+        <p><strong>Day 1:</strong> Explore the coastline and coastal communities.</p>
+
+        <p><strong>Day 2:</strong> Enjoy responsible beach and marine activities.</p>
+
+        <p><strong>Day 3:</strong> Experience local coastal food and culture.</p>
+        `;
+
+    }
+
+
+    else {
+
+        plan = `
+        <h3>Your Adventure Plan</h3>
+
+        <p><strong>Day 1:</strong> Begin your Somali adventure with a guided experience.</p>
+
+        <p><strong>Day 2:</strong> Explore nature and coastal environments.</p>
+
+        <p><strong>Day 3:</strong> Experience Somali culture and local activities.</p>
+        `;
+
+    }
+
+
+    plan += `
+
+    <br>
+
+    <p>
+    <strong>Trip length:</strong> ${days} days
+    </p>
+
+    <p>
+    <strong>Travel style:</strong> ${style}
+    </p>
+
+    <br>
+
+    <p>
+    ⚠️ This is a demonstration AI-style planner for
+    the tourism technology project. Always check current
+    official travel information before making real travel plans.
+    </p>
+
+    `;
+
+
+    result.innerHTML = plan;
+
+    result.style.display = "block";
+
+}
+
+</script>
+
+
+</body>
+
+</html>

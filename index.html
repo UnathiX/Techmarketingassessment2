@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Somalia | Home</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f7f6;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* NAVIGATION */
+        nav {
+            background: #063b35;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #f2c94c;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 85vh;
+            background:
+                linear-gradient(rgba(0, 50, 45, 0.55), rgba(0, 50, 45, 0.55)),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1800&q=80");
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            padding: 7%;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 700px;
+        }
+
+        .hero h1 {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 21px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f2c94c;
+            color: #063b35;
+            padding: 14px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .btn:hover {
+            background: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid white;
+            color: white;
+        }
+
+        /* GENERAL */
+        section {
+            padding: 70px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            color: #063b35;
+            margin-bottom: 10px;
+        }
+
+        .section-title p {
+            max-width: 700px;
+            margin: auto;
+        }
+
+        /* FACTS */
+        .facts {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .fact {
+            background: white;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .fact h3 {
+            color: #063b35;
+            font-size: 25px;
+            margin-bottom: 8px;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #063b35;
+            margin-bottom: 10px;
+        }
+
+        /* SDG */
+        .sdg {
+            background: #063b35;
+            color: white;
+            text-align: center;
+        }
+
+        .sdg h2 {
+            color: #f2c94c;
+        }
+
+        .sdg-box {
+            max-width: 800px;
+            margin: auto;
+            background: rgba(255,255,255,0.1);
+            padding: 35px;
+            border-radius: 15px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #022722;
+            color: white;
+            padding: 35px 7%;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 7px 0;
+        }
+
+        /* MOBILE */
+        @media(max-width: 800px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero h1 {
+                font-size: 42px;
+            }
+
+            .facts,
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<nav>
+
+    <div class="logo">
+        DISCOVER SOMALIA
+    </div>
+
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="explore.html">Explore</a></li>
+        <li><a href="sustainable.html">Sustainable Somalia</a></li>
+    </ul>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <h1>Discover Somalia</h1>
+
+        <p>
+            Africa's Hidden Coastal Gem
+        </p>
+
+        <p>
+            Explore Somalia's culture, heritage, coastline,
+            wildlife and communities while discovering opportunities
+            for responsible and sustainable tourism.
+        </p>
+
+        <a href="explore.html" class="btn">
+            Explore Somalia
+        </a>
+
+        <a href="sustainable.html" class="btn btn-outline">
+            Sustainable Tourism
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- QUICK FACTS -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>Somalia at a Glance</h2>
+
+        <p>
+            Discover some of the features that make Somalia an
+            interesting tourism destination.
+        </p>
+
+    </div>
+
+    <div class="facts">
+
+        <div class="fact">
+            <h3>Coastline</h3>
+            <p>
+                Somalia has a long coastline along the
+                Indian Ocean and Gulf of Aden.
+            </p>
+        </div>
+
+        <div class="fact">
+            <h3>Culture</h3>
+            <p>
+                Somali culture includes traditional music,
+                food, clothing, poetry and hospitality.
+            </p>
+        </div>
+
+        <div class="fact">
+            <h3>Heritage</h3>
+            <p>
+                Somalia contains archaeological and
+                historical sites such as Laas Geel.
+            </p>
+        </div>
+
+        <div class="fact">
+            <h3>Nature</h3>
+            <p>
+                The country has beaches, marine environments,
+                wildlife and diverse landscapes.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WHY VISIT -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>Why Discover Somalia?</h2>
+
+        <p>
+            Somalia offers opportunities to experience
+            culture, history, nature and coastal tourism.
+        </p>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=900&q=80">
+
+            <div class="card-content">
+
+                <h3>Coastal Experiences</h3>
+
+                <p>
+                    Discover beautiful coastal environments,
+                    beaches and opportunities for marine tourism.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=900&q=80">
+
+            <div class="card-content">
+
+                <h3>Culture & Heritage</h3>
+
+                <p>
+                    Experience Somali traditions, food,
+                    history, crafts and cultural heritage.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="card">
+
+            <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=900&q=80">
+
+            <div class="card-content">
+
+                <h3>Nature</h3>
+
+                <p>
+                    Explore natural landscapes and opportunities
+                    for responsible nature-based tourism.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SDG -->
+
+<section class="sdg">
+
+    <div class="section-title">
+
+        <h2>Tourism & Sustainable Development</h2>
+
+    </div>
+
+    <div class="sdg-box">
+
+        <h2>SDG 8: Decent Work and Economic Growth</h2>
+
+        <br>
+
+        <p>
+            Sustainable tourism can contribute to employment,
+            entrepreneurship and economic opportunities for
+            local communities.
+        </p>
+
+        <br>
+
+        <p>
+            Tourism can also support local culture and products
+            when visitors and businesses participate responsibly.
+        </p>
+
+        <br>
+
+        <a href="sustainable.html" class="btn">
+            Learn More
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <h3>Discover Somalia</h3>
+
+    <p>
+        Culture • Heritage • Nature • Sustainable Tourism
+    </p>
+
+    <p>
+        © 2026 Discover Somalia Tourism Project
+    </p>
+
+</footer>
+
+</body>
+</html>
